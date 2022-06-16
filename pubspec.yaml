@@ -37,6 +37,7 @@ dependencies:
   responsive_sizer: ^3.0.8
   google_fonts: ^3.0.1
   salomon_bottom_bar: ^3.3.1
+  fluttertoast: ^8.0.9
 
 dev_dependencies:
   flutter_test:

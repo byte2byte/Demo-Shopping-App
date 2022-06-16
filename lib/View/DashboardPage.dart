@@ -2,6 +2,7 @@ import 'package:boptee/Components/KItemWidget.dart';
 import 'package:boptee/Utils/Constants.dart';
 import 'package:boptee/Utils/Kolors.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class DashBoardPage extends StatefulWidget {
@@ -42,37 +43,10 @@ class _DashBoardPageState extends State<DashBoardPage> {
                         )),
                     Column(
                       children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Row(
-                              children: [
-                                IconButton(
-                                    onPressed: () {},
-                                    icon: ImageIcon(
-                                      AssetImage("assets/Icons/menu.png"),
-                                      size: 20.0.sp,
-                                      color: Colors.white,
-                                    )),
-                                Text(
-                                  "BopTee",
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 19.0.sp,
-                                      fontWeight: FontWeight.w300),
-                                )
-                              ],
-                            ),
-                            IconButton(
-                                onPressed: () {},
-                                icon: ImageIcon(
-                                  AssetImage("assets/Icons/Notification.png"),
-                                  size: 20.0.sp,
-                                  color: Colors.white,
-                                ))
-                          ],
-                        ),
                         kSizedBox(),
+                        SizedBox(
+                          height: 5.0.h,
+                        ),
                         Padding(
                           padding: EdgeInsets.symmetric(horizontal: 3.0.w),
                           child: Row(
@@ -269,8 +243,12 @@ class _DashBoardPageState extends State<DashBoardPage> {
                       style: headingStyle(),
                     ),
                     ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Fluttertoast.showToast(
+                              msg: "Feature coming soon....");
+                        },
                         style: ElevatedButton.styleFrom(
+                            elevation: 0,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5.w)),
                             primary: const Color(0xff737EC4).withOpacity(0.6)),
@@ -341,8 +319,12 @@ class _DashBoardPageState extends State<DashBoardPage> {
                       style: headingStyle(),
                     ),
                     ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Fluttertoast.showToast(
+                              msg: "Feature coming soon....");
+                        },
                         style: ElevatedButton.styleFrom(
+                            elevation: 0,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5.w)),
                             primary: Color(0xff737EC4).withOpacity(0.6)),
@@ -387,8 +369,12 @@ class _DashBoardPageState extends State<DashBoardPage> {
                       style: headingStyle(),
                     ),
                     ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Fluttertoast.showToast(
+                              msg: "Feature coming soon....");
+                        },
                         style: ElevatedButton.styleFrom(
+                            elevation: 0,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5.w)),
                             primary: Color(0xff737EC4).withOpacity(0.6)),
