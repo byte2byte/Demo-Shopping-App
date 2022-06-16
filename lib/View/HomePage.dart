@@ -1,6 +1,7 @@
 import 'package:boptee/KIconClass.dart';
 import 'package:boptee/Utils/Constants.dart';
 import 'package:boptee/Utils/Kolors.dart';
+import 'package:boptee/View/BottomNavBar.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -141,7 +142,10 @@ class _HomePageState extends State<HomePage> {
             kSizedBox(),
             Center(
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => const BottomNavBar()));
+                },
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(2.5.w)),

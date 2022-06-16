@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(textTheme: GoogleFonts.poppinsTextTheme()),
           debugShowCheckedModeBanner: false,
           title: 'BopTee',
-          home: BottomNavBar());
+          home: const HomePage());
     });
   }
 }
